@@ -7464,37 +7464,6 @@ var TextLinesReveal = /*#__PURE__*/function () {
           });
         }
       });
-      window.addEventListener('load', function () {
-        // empty the lines array
-        _this.lines = []; // re initialize the Split Text 
-
-        var _iterator3 = _createForOfIteratorHelper(_this.SplitTypeInstances),
-            _step3;
-
-        try {
-          for (_iterator3.s(); !(_step3 = _iterator3.n()).done;) {
-            var instance = _step3.value;
-            // re-split text
-            // https://github.com/lukePeavey/SplitType#instancesplitoptions-void
-            instance.split(); // need to wrap again the new lines elements (div with class .oh)
-
-            (0, _utils.wrapLines)(instance.lines, 'div', 'oh');
-
-            _this.lines.push(instance.lines);
-          } // hide the lines
-
-        } catch (err) {
-          _iterator3.e(err);
-        } finally {
-          _iterator3.f();
-        }
-
-        if (!_this.isVisible) {
-          _gsap.gsap.set(_this.lines, {
-            y: '-150%'
-          });
-        }
-      });
     }
   }]);
 
@@ -7889,4 +7858,4 @@ menu.DOM.closeCtrl.addEventListener('click', function () {
   showContent();
 });
 },{"./utils":"MgTz","./menu":"i0CD","./textReveal":"WQW1","./textLinesReveal":"GCGZ","./imgReveal":"CZXw","gsap":"TpQl"}]},{},["QvaY"], null)
-//# sourceMappingURL=/js.2fa06326.js.map
+//# sourceMappingURL=/js.a8b1e3d8.js.map
